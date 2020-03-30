@@ -5,7 +5,7 @@
  */
 package servlet_package;
 
-import database.DBConnection;
+import db_package.DBConnection;
 import db_package.user;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -52,9 +52,9 @@ public class userList_servlet extends HttpServlet {
                 
             }
         } catch (SQLException ex) {
-            Logger.getLogger(userList_servlet.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(registration_servlet1.class.getName()).log(Level.SEVERE, null, ex);
         } catch (ClassNotFoundException ex) {
-            Logger.getLogger(userList_servlet.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(registration_servlet1.class.getName()).log(Level.SEVERE, null, ex);
         }
      request.getRequestDispatcher("userlist.jsp").forward(request,response);
   

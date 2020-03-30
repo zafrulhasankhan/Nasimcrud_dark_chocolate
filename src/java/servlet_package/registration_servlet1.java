@@ -1,10 +1,7 @@
-
- 
 package servlet_package;
 
-import database.DBConnection;
+import db_package.DBConnection;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.logging.Level;

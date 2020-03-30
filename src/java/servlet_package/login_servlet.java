@@ -6,7 +6,7 @@
 package servlet_package;
 
 import static com.sun.corba.se.spi.presentation.rmi.StubAdapter.request;
-import database.DBConnection;
+import db_package.DBConnection;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.PreparedStatement;
@@ -55,10 +55,10 @@ public class login_servlet extends HttpServlet {
             
              }
             
-        } catch (SQLException ex) {
-            Logger.getLogger(login_servlet.class.getName()).log(Level.SEVERE, null, ex);
+         } catch (SQLException ex) {
+            Logger.getLogger(registration_servlet1.class.getName()).log(Level.SEVERE, null, ex);
         } catch (ClassNotFoundException ex) {
-            Logger.getLogger(login_servlet.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(registration_servlet1.class.getName()).log(Level.SEVERE, null, ex);
         }
     
  String error = "Loginin Failed.Please try again.";

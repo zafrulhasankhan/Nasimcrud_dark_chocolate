@@ -12,12 +12,9 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
-        <form action="">
-            <label for="img"> select image:</label>
-            <input type="file" onchange="readURL(this);"/> 
-            <img id="blah" src="#" id="img" name="img" accept="image/* alt="your image"/>     
-            <input type="submit"> 
-        </form>
+        <div class="form-group custom-mt-form-group">
+                                <label for="img">Add your Profile picture</label>
+            <input type="file" id="img" name="img" accept="image/yes.png">
+                            </div>
     </body>
 </html>

@@ -5,7 +5,7 @@
  */
 package servlet_package;
 
-import database.DBConnection;
+import db_package.DBConnection;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.PreparedStatement;
@@ -64,10 +64,10 @@ public class login_servlet1 extends HttpServlet {
             //request.getRequestDispatcher("loginmsg.jsp").forward(request,response);
                  System.out.println("dj");
              }
-        } catch (SQLException ex) {
-            Logger.getLogger(login_servlet1.class.getName()).log(Level.SEVERE, null, ex);
+         } catch (SQLException ex) {
+            Logger.getLogger(registration_servlet1.class.getName()).log(Level.SEVERE, null, ex);
         } catch (ClassNotFoundException ex) {
-            Logger.getLogger(login_servlet1.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(registration_servlet1.class.getName()).log(Level.SEVERE, null, ex);
         }
            
  String error = "Loginin Failed.Please try again.";
